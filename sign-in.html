@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./scss/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-log position-relative navbar-expand-md navbar-light ms-0 py-3">
+            <div class="navbar-wrap d-flex align-items-center justify-content-between flex-wrap">
+                <a class="navbar-brand" href="#"> <img src="./images/logo.svg" alt="mob orbitX"
+                        class="img-fluid me-2"></a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLog" aria-controls="navbarLog" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class=""></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarLog">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="javascript:void(0)"><i
+                                    class='fa fa-user-friends me-2'></i>About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)"><i class="fa-solid fa-phone me-2"></i>Contact
+                                Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="ms-0 mt-0">
+        <section>
+            <div class="sign">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-md-7 mb-4">
+                            <div class="sign-left">
+                                <img src="./images/signin/sign_in.png" alt="signin" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-5 px-md-3 px-lg-5 mb-4">
+                            <div class="sign-right">
+                                <h1 class="font-30">Welcome 👋</h1>
+                                <p class="font-14 mb-4">Please login to continue to your account.</p>
+                                <form class="cst-form">
+                                    <div class="mb-4">
+                                        <label for="email" class="form-label">Email</label>
+                                        <div class="d-flex align-items-center">
+                                            <input type="email" class="form-control py-3" id="email"
+                                                placeholder="Enter Email">
+                                        </div>
+                                    </div>
+                                    <div class="mb-4">
+                                        <label for="Password" class="form-label">Password</label>
+                                        <div class="d-flex align-items-center passwordInput">
+                                            <input type="password" class="form-control py-3" id="Password"
+                                                placeholder="Enter Password">
+                                            <img src="./images/hide_password.svg" alt="hide password"
+                                                class="img-fluid cst-form-pass" id="hidePassword">
+                                            <img src="./images/show_password.svg" alt="show password"
+                                                class="img-fluid cst-form-pass" id="showPassword"
+                                                style="display: none;">
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn primarybtn w-100">Sign in</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footerlog">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-between flex-wrap">
+                            <p class="ps-lg-5 footerlog-para">© Copyrights <span id="currentYear"></span> | All Rights Reserved. Crafted with ❤️ by Mobavenue
+                            </p>
+                            <ul class="footerlog-lists d-flex align-items-center justify-content-end flex-wrap p-0">
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        Terms & Condition
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script type="text/javascript" src="./js/jquery-3.7.1.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src="./js/custom.js"></script>
+
+
+</body>
+
+</html>

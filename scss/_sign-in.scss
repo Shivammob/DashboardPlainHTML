@@ -1,0 +1,22 @@
+.sign {
+    &-left {
+        img {
+            margin-top: -76px;
+            @media (min-width: 768px) and (max-width: 991px) {
+                margin-top: -88px;
+            }
+
+            @media only screen and (max-width: 767px) {
+                margin-top: 15px;
+            }
+            // position: absolute;
+            // width: 58%;
+            // top: 12px;
+        }
+        p {
+            margin-top: -40px;
+        }
+    }
+
+}
+

@@ -1,0 +1,79 @@
+.table-head {
+    position: absolute;
+    top: -65px;
+    width: 100%;
+
+    .card {
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 48px;
+            right: -20px;
+            display: block;
+            width: 20px;
+            height: 20px;
+            background: url(../images/rounded_bg.svg);
+        }
+    }
+}
+
+
+.highcharts-figure {
+    .rpcgraph {
+        @media (min-width: 768px) and (max-width: 1199px) {
+            height: 400px;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            height: 270px;
+        }
+    }
+}
+
+
+.insights {
+    &-filter {
+        display: none;
+        margin: 5px 0 25px;
+
+        &.show {
+            display: block;
+            transition: all linear 0.2s;
+        }
+
+        &-select {
+            position: relative;
+
+            input {
+                padding: 10px;
+                border: unset;
+                border-radius: 8px;
+                width: 100%;
+            }
+
+            input[type="text"]::-webkit-calendar-picker-indicator,
+            input[type="search"]::-webkit-calendar-picker-indicator {
+                display: none !important;
+            }
+
+
+            .dropdown-icon {
+                position: absolute;
+                right: 25px;
+                top: 70%;
+                transform: translateY(-50%);
+                pointer-events: none;
+                color: #999;
+            }
+        }
+    }
+}
+
+
+.bg-grey {
+    background: #2323230D;
+    border-radius: 20px;
+    padding: 15px;
+}

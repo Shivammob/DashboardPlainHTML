@@ -1,0 +1,115 @@
+.controlpanel {
+    
+    &-admin {
+        border: 1px solid #EFEFEF;
+        border-radius: 12px;
+        padding: 15px;
+
+        img {
+            width: 35px;
+        }
+    }
+
+    &-account {
+        position: relative;
+        overflow: hidden;
+        &:before {
+            content: "";
+            position: absolute;
+            top: -20px;
+            right: 0;
+            width: 84px;
+            height: 90px;
+            background: url(../images/yellow_circle.png) no-repeat;
+            z-index: 1;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 130px;
+            height: 130px;
+            background: url(../images/rocket.png) no-repeat;
+            background-size: 100%;
+            z-index: 1;
+        }
+
+        p {
+            line-height: 2;
+        }
+    }
+}
+
+
+.table {
+    .form-check-input {
+        position: relative;
+        width: 18px;
+        height: 18px;
+        &[type=radio] {
+            border: 2px solid #A0A9CB8A;
+            background: #A0A9CB8A;
+        }
+    
+        &:checked[type=radio] {
+            background-color: transparent;
+            box-shadow: none;
+            border: 3px solid #A0A9CB8A;
+            &:after {
+                content: "";
+                position: absolute;
+                top: 0px;
+                left: 0;
+                height: 13px;
+                width: 13px;
+                background: $color11;
+                border-radius: 100%;
+            }
+        }
+    }
+    &-responsive {
+        &::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            background-color: #F5F5F5;
+        }
+
+        &::-webkit-scrollbar {
+            width: 6px;
+            height: 4px;
+            background-color: #F5F5F5;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: $color2;
+        }
+    }
+}
+
+.nav-lists {
+    li {
+        width: 100%;
+        text-align: center;
+    }
+    ul {
+        border-radius: 8px;
+        overflow: auto;
+        li {
+            a {
+                display: inline-block;
+                color: $color10;
+                padding: 10px 25px;
+                white-space: nowrap;
+                width: 100%;
+                &.active {
+                    color: $color15;
+                    font-weight: 500;
+                    border-bottom: 2px solid $color15;
+                }
+            }
+        }
+    }
+}
+
+
+

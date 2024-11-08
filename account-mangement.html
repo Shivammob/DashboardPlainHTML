@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/dataTables.bootstrap5.css">
+    <link rel="stylesheet" href="./scss/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light p-0 pb-2 pb-md-0 mb-4 bg-white">
+            <div class="container-fluid g-0 d-block">
+                <div class="row flex-md-nowrap">
+                    <div class="col-md-3 pe-0">
+                        <div class="navbar-trends d-flex align-items-center flex-shrink-0">
+                            <img src="./images/latest_trends.svg" alt="latest trends" class="img-fluid me-2">
+                            <div class="trends">
+                                <h6 class="font-600 mb-1">Latest Trends</h6>
+                                <p class="font-9 mb-0">Data till : 28 August, 2024 : 15:30 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-lg-8 col-xl-9">
+                        <div class="row navbar-menu h-100 align-items-center">
+                            <div class="col-md-6 col-lg-8 overflow-hidden py-3 py-md-0">
+                                <ul class="marquee marqueeone d-flex align-items-center mb-0 text-nowrap">
+                                    <li class="marquee-item me-5">
+                                        Lorem ipsum dolor sit.
+                                        <span class="bordericon decreaseicon text-danger font-12 ms-2">12%</span>
+                                    </li>
+                                    <li class="marquee-item me-5">
+                                        Lorem ipsum dolor sit.
+                                        <span class="bordericon increaseicon text-success font-12 ms-2">52%</span>
+                                    </li>
+                                    <li class="marquee-item me-5">
+                                        Lorem ipsum dolor sit.
+                                        <span class="bordericon decreaseicon text-danger font-12 ms-2">12%</span>
+                                    </li>
+                                    <li class="marquee-item me-5">
+                                        Lorem ipsum dolor sit.
+                                        <span class="bordericon increaseicon text-success font-12 ms-2">52%</span>
+                                    </li>
+                                    <li class="marquee-item me-5">
+                                        Lorem ipsum dolor sit.
+                                        <span class="bordericon decreaseicon text-danger font-12 ms-2">12%</span>
+                                    </li>
+                                    <li class="marquee-item me-5">
+                                        Lorem ipsum dolor sit.
+                                        <span class="bordericon increaseicon text-success font-12 ms-2">52%</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-3 col-md-1 text-center">
+                                <a href="javascript:void(0)" class="notify">
+                                    <img src="./images/notification_bell.svg" alt="notification bell" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="dropdown user-login">
+                                    <a class="dropdown-toggle d-flex align-items-center" type="button"
+                                        id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="./images/active_profile.svg" alt="profile" class="img-fluid">
+                                        <div class="user-login-detail mx-3">
+                                            <h6 class="mb-1">Kunal Kothari</h6>
+                                            <span class="d-block font-10">Super Admin</span>
+                                        </div>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-3 col-md-2 text-center d-lg-none">
+                                <button class="navbar-toggler" type="button">
+                                    <span class=""></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="sidebar">
+            <img src="./images/logo.svg" alt="moborbitx" class="img-fluid bdr-bottom py-3 mx-auto d-block">
+            <div class="sidebar-menu">
+                <div class="sidebar-menu-list py-3 bdr-bottom">
+                    <h6 class="secondary-text font-9">Main</h6>
+                    <a href="javascript:void(0)" class="sidebar-menu-list-item">
+                        <img src="./images/dashboard.svg" alt="dashboard" class="img-fluid me-2 menu-icon img1">
+                        <img src="./images/dashboard_1.svg" alt="dashboard" class="img-fluid me-2 menu-icon img2">
+                        Dashboard
+                    </a>
+                    <a class="sidebar-menu-list-item collapsable collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <img src="./images/campaign.svg" alt="campaign" class="img-fluid me-2 menu-icon img1">
+                        <img src="./images/campaign_1.svg" alt="campaign" class="img-fluid me-2 menu-icon img2">
+                        Campaign
+                    </a>
+                    <div class="collapse" id="collapseOne">
+                        <ul class="sidebar-menu-list-sub">
+                            <li>
+                                <a href="javascript:void(0)" class="active">Overview</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">SubId</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Hourly</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Timeframe</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Campaign (FB)</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a class="sidebar-menu-list-item collapsable collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <img src="./images/report.svg" alt="report" class="img-fluid me-2 menu-icon img1">
+                        <img src="./images/report_1.svg" alt="report" class="img-fluid me-2 menu-icon img2">
+                        Reports
+                    </a>
+                    <div class="collapse" id="collapseTwo">
+                        <ul class="sidebar-menu-list-sub">
+                            <li>
+                                <a href="javascript:void(0)" class="active">Overview</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">SubId</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Hourly</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Timeframe</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Campaign (FB)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="javascript:void(0)" class="sidebar-menu-list-item">
+                        <img src="./images/facebook_cebo.svg" alt="facebook cebo" class="img-fluid me-2 menu-icon img1">
+                        <img src="./images/facebook_cebo_1.svg" alt="facebook cebo"
+                            class="img-fluid me-2 menu-icon img2">
+                        Facebook CEBO
+                    </a>
+                </div>
+                <div class="sidebar-menu-list py-3 mb-3 bdr-bottom">
+                    <h6 class="secondary-text font-9">Help</h6>
+                    <a href="javascript:void(0)" class="sidebar-menu-list-item">
+                        <img src="./images/settings.svg" alt="settings" class="img-fluid me-2 menu-icon img1">
+                        <img src="./images/settings_1.svg" alt="settings" class="img-fluid me-2 menu-icon img2">
+                        Settings
+                    </a>
+                </div>
+                <div class="sidebar-menu-list dark-bg rounded py-3 px-2 mb-3">
+                    <h6 class="secondary-text font-9 text-uppercase d-flex justify-content-between align-items-center">
+                        switch account <a href="javascript:void(0)" class=""><img src="./images/switch_account.svg"
+                                alt="switch account" class="img-fluid"></a></h6>
+                    <div class="sidebar-menu-list-users">
+                        <div class="users d-flex align-items-center py-2">
+                            <img src="./images/profile_logo.svg" alt="profile" class="img-fluid me-2 menu-icon img1">
+                            <img src="./images/profile_logo_1.svg" alt="profile" class="img-fluid me-2 menu-icon img2">
+                            <div class="form-check d-flex align-items-center justify-content-between ps-0 w-100">
+                                <label class="form-check-label w100 text-ellipses" for="flexRadioDefault1"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Kunal Kothari">
+                                    Kunal Kothari
+                                </label>
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1" checked>
+
+                            </div>
+                        </div>
+                        <div class="users d-flex align-items-center py-2">
+                            <img src="./images/profile_logo.svg" alt="profile" class="img-fluid me-2 menu-icon img1">
+                            <img src="./images/profile_logo_1.svg" alt="profile" class="img-fluid me-2 menu-icon img2">
+                            <div class="form-check d-flex align-items-center justify-content-between ps-0 w-100">
+                                <label class="form-check-label w-100 text-ellipses" for="flexRadioDefault2"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Monica Davis">
+                                    Monica Davis
+                                </label>
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2">
+
+                            </div>
+                        </div>
+                        <div class="users d-flex align-items-center py-2">
+                            <img src="./images/profile_logo.svg" alt="profile" class="img-fluid me-2 menu-icon img1">
+                            <img src="./images/profile_logo_1.svg" alt="profile" class="img-fluid me-2 menu-icon img2">
+                            <div class="form-check d-flex align-items-center justify-content-between ps-0 w-100">
+                                <label class="form-check-label w-100 text-ellipses" for="flexRadioDefault3"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Ross Geller">
+                                    Ross Geller
+                                </label>
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault3">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-menu-list mb-2">
+                    <a href="javascript:void(0)" class="sidebar-menu-list-item">
+                        <img src="./images/add_new_account.svg" alt="add new account"
+                            class="img-fluid me-2 menu-icon img1">
+                        <img src="./images/add_new_account_1.svg" alt="add new account"
+                            class="img-fluid me-2 menu-icon img2">
+                        Add New Account
+                    </a>
+                </div>
+                <div class="sidebar-menu-list mb-2">
+                    <a href="javascript:void(0)" class="sidebar-menu-list-item">
+                        <img src="./images/log_out.svg" alt="logout account" class="img-fluid me-2 menu-icon img1">
+                        <img src="./images/log_out_1.svg" alt="logout account" class="img-fluid me-2 menu-icon img2">
+                        Logout Account
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="account">
+                            <div
+                                class="account-heading d-flex justify-content-between align-items-center flex-wrap mb-4">
+                                <h1 class="mb-3">Ad Account Management</h1>
+                                <a href="javascript:void(0)" class="btn primarybtn mb-3" data-bs-toggle="modal"
+                                data-bs-target="#addNewAccount"><i
+                                        class="fa-solid fa-plus pe-1"></i> Add Account</a>
+                            </div>
+                            <div class="account-table position-relative mb-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between mb-4">
+                                            <div class="account-table-head">
+                                                <h4 class="font-600">Overview</h4>
+                                                <p class="mb-0">View and manage all your ad accounts in one place.</p>
+                                            </div>
+                                            <div class="dropdown">
+                                                <button class="bg-transparent" type="button" id="campaignDropdown"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="campaignDropdown">
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Another action</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Something else
+                                                            here</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="table-responsive">
+                                            <table class="table stripe table-hover text-nowrap" width="100%"
+                                                id="accountMangement">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Platform</th>
+                                                        <th>Ad Account Name</th>
+                                                        <th>Users Name</th>
+                                                        <th>Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="border-0">
+                                                    <tr>
+                                                        <td>Facebook</td>
+                                                        <td>Account 5</td>
+                                                        <td>John Doe, Jane Smith, +2 More</td>
+                                                        <td><a href="javascript:void(0)" class="btn assignbtn me-2"><img
+                                                                    src="./images/users.svg" alt="assign user"
+                                                                    class="img-fluid me-1"> Assign User</a>
+                                                            <a href="javascript:void(0)" class="btn assignbtn"><img
+                                                                    src="./images/manage_campaign.svg"
+                                                                    alt="manage campaign" class="img-fluid me-1"> Manage
+                                                                Campaign</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Google</td>
+                                                        <td>Account 1</td>
+                                                        <td>John Doe, Jane Smith, +2 More</td>
+                                                        <td><a href="javascript:void(0)" class="btn assignbtn me-2"><img
+                                                                    src="./images/users.svg" alt="assign user"
+                                                                    class="img-fluid me-1"> Assign User</a>
+                                                            <a href="javascript:void(0)" class="btn assignbtn"><img
+                                                                    src="./images/manage_campaign.svg"
+                                                                    alt="manage campaign" class="img-fluid me-1"> Manage
+                                                                Campaign</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Text</td>
+                                                        <td>Text</td>
+                                                        <td>Text</td>
+                                                        <td><a href="javascript:void(0)" class="btn assignbtn me-2"><img
+                                                                    src="./images/users.svg" alt="assign user"
+                                                                    class="img-fluid me-1"> Assign User</a>
+                                                            <a href="javascript:void(0)" class="btn assignbtn"><img
+                                                                    src="./images/manage_campaign.svg"
+                                                                    alt="manage campaign" class="img-fluid me-1"> Manage
+                                                                Campaign</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Text</td>
+                                                        <td>Text</td>
+                                                        <td>Text</td>
+                                                        <td><a href="javascript:void(0)" class="btn assignbtn me-2"><img
+                                                                    src="./images/users.svg" alt="assign user"
+                                                                    class="img-fluid me-1"> Assign User</a>
+                                                            <a href="javascript:void(0)" class="btn assignbtn"><img
+                                                                    src="./images/manage_campaign.svg"
+                                                                    alt="manage campaign" class="img-fluid me-1"> Manage
+                                                                Campaign</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Text</td>
+                                                        <td>Text</td>
+                                                        <td>Text</td>
+                                                        <td><a href="javascript:void(0)" class="btn assignbtn me-2"><img
+                                                                    src="./images/users.svg" alt="assign user"
+                                                                    class="img-fluid me-1"> Assign User</a>
+                                                            <a href="javascript:void(0)" class="btn assignbtn"><img
+                                                                    src="./images/manage_campaign.svg"
+                                                                    alt="manage campaign" class="img-fluid me-1"> Manage
+                                                                Campaign</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Text</td>
+                                                        <td>Text</td>
+                                                        <td>Text</td>
+                                                        <td><a href="javascript:void(0)" class="btn assignbtn me-2"><img
+                                                                    src="./images/users.svg" alt="assign user"
+                                                                    class="img-fluid me-1"> Assign User</a>
+                                                            <a href="javascript:void(0)" class="btn assignbtn"><img
+                                                                    src="./images/manage_campaign.svg"
+                                                                    alt="manage campaign" class="img-fluid me-1"> Manage
+                                                                Campaign</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Text</td>
+                                                        <td>Text</td>
+                                                        <td>Text</td>
+                                                        <td><a href="javascript:void(0)" class="btn assignbtn me-2"><img
+                                                                    src="./images/users.svg" alt="assign user"
+                                                                    class="img-fluid me-1"> Assign User</a>
+                                                            <a href="javascript:void(0)" class="btn assignbtn"><img
+                                                                    src="./images/manage_campaign.svg"
+                                                                    alt="manage campaign" class="img-fluid me-1"> Manage
+                                                                Campaign</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Text</td>
+                                                        <td>Text</td>
+                                                        <td>Text</td>
+                                                        <td><a href="javascript:void(0)" class="btn assignbtn me-2"><img
+                                                                    src="./images/users.svg" alt="assign user"
+                                                                    class="img-fluid me-1"> Assign User</a>
+                                                            <a href="javascript:void(0)" class="btn assignbtn"><img
+                                                                    src="./images/manage_campaign.svg"
+                                                                    alt="manage campaign" class="img-fluid me-1"> Manage
+                                                                Campaign</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="modal fade account-modal" id="addNewAccount" tabindex="-1" aria-labelledby="addNewAccountLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header flex-column align-items-start">
+                        <h5 class="modal-title font-600 mb-2" id="addNewAccountLabel">Add New Account</h5>
+                        <p class="mb-0">Set up an ad account and assign users.</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="add-article-form">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="mb-4">
+                                        <label for="platform" class="form-label">Platform</label>
+                                        <select class="form-select" aria-label="platform" id="platform">
+                                            <option selected>Select</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                          </select>
+                                      </div>
+                                </div>
+                                
+                                <div class="col-12">
+                                    <div class="mb-4">
+                                        <label for="accountId" class="form-label">Account Id</label>
+                                        <input type="text" class="form-control" id="accountId" placeholder="Type...">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="mb-4">
+                                        <label for="totalComments" class="form-label">Account Name</label>
+                                        <input type="text" class="form-control" id="totalComments" placeholder="Type...">
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-4">
+                                    <a href="javascript:void(0)" class="btn primarybtn w-100">Save</a>
+                                 </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <script type="text/javascript" src="./js/jquery-3.7.1.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src="./js/dataTables.js"></script>
+    <script type="text/javascript" src="./js/dataTables.bootstrap5.js"></script>
+    <script type="text/javascript" src="./js/highcharts.js"></script>
+    <script type="text/javascript" src="./js/custom.js"></script>
+
+    <script>
+        $("#accountMangement").dataTable({
+            scrollX: true,
+            language: {
+                'paginate': {
+                    'previous': '<i class="fa-solid fa-angle-left me-2 font-12"></i>Back',
+                    'next': 'Next<i class="fa-solid fa-angle-right ms-2 font-12"></i>',
+                    'first': '<i class="fa-solid fa-angles-left me-2 font-12"></i>First',
+                    'last': 'Last<i class="fa-solid fa-angles-right ms-2 font-12"></i>'
+                }
+            },
+
+            // "pageLength": 5,
+            // "sDom": 'Rfrtlip',
+        });
+    </script>
+
+</body>
+
+</html>

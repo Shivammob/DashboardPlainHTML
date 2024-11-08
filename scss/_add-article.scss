@@ -1,0 +1,19 @@
+.add-article-form {
+    label {
+        font-weight: 500;
+    }
+    input, textarea, select {
+        color: $color2;
+        font-size: 14px;
+        border: 1px solid #CCCCCC;
+        padding: 15px 12px;
+        &::-moz-placeholder {
+            color: $color2;
+            font-size: 14px;
+        }
+        &::placeholder {
+            color: $color2;
+            font-size: 14px;
+        }
+    }
+}

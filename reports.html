@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview Reports</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/dataTables.bootstrap5.css">
+    <link rel="stylesheet" type="text/css" href="./css/daterangepicker.css" />
+    <link rel="stylesheet" href="./scss/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light p-0 pb-2 pb-md-0 mb-4 bg-white">
+            <div class="container-fluid g-0 d-block">
+                <div class="row flex-md-nowrap">
+                    <div class="col-md-3 pe-0">
+                        <div class="navbar-trends d-flex align-items-center flex-shrink-0">
+                            <img src="./images/latest_trends.svg" alt="latest trends" class="img-fluid me-2">
+                            <div class="trends">
+                                <h6 class="font-600 mb-1">Latest Trends</h6>
+                                <p class="font-9 mb-0">Data till : 28 August, 2024 : 15:30 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-lg-8 col-xl-9">
+                        <div class="row navbar-menu h-100 align-items-center">
+                            <div class="col-md-6 col-lg-8 overflow-hidden py-3 py-md-0">
+                                <ul class="marquee marqueeone d-flex align-items-center mb-0 text-nowrap">
+                                    <li class="marquee-item me-5">
+                                        Lorem ipsum dolor sit.
+                                        <span class="bordericon decreaseicon text-danger font-12 ms-2">12%</span>
+                                    </li>
+                                    <li class="marquee-item me-5">
+                                        Lorem ipsum dolor sit.
+                                        <span class="bordericon increaseicon text-success font-12 ms-2">52%</span>
+                                    </li>
+                                    <li class="marquee-item me-5">
+                                        Lorem ipsum dolor sit.
+                                        <span class="bordericon decreaseicon text-danger font-12 ms-2">12%</span>
+                                    </li>
+                                    <li class="marquee-item me-5">
+                                        Lorem ipsum dolor sit.
+                                        <span class="bordericon increaseicon text-success font-12 ms-2">52%</span>
+                                    </li>
+                                    <li class="marquee-item me-5">
+                                        Lorem ipsum dolor sit.
+                                        <span class="bordericon decreaseicon text-danger font-12 ms-2">12%</span>
+                                    </li>
+                                    <li class="marquee-item me-5">
+                                        Lorem ipsum dolor sit.
+                                        <span class="bordericon increaseicon text-success font-12 ms-2">52%</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-3 col-md-1 text-center">
+                                <a href="javascript:void(0)" class="notify">
+                                    <img src="./images/notification_bell.svg" alt="notification bell" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="dropdown user-login">
+                                    <a class="dropdown-toggle d-flex align-items-center" type="button"
+                                        id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="./images/active_profile.svg" alt="profile" class="img-fluid">
+                                        <div class="user-login-detail mx-3">
+                                            <h6 class="mb-1">Kunal Kothari</h6>
+                                            <span class="d-block font-10">Super Admin</span>
+                                        </div>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-3 col-md-2 text-center d-lg-none">
+                                <button class="navbar-toggler" type="button">
+                                    <span class=""></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="sidebar">
+            <img src="./images/logo.svg" alt="moborbitx" class="img-fluid bdr-bottom py-3 mx-auto d-block">
+            <div class="sidebar-menu">
+                <div class="sidebar-menu-list py-3 bdr-bottom">
+                    <h6 class="secondary-text font-9">Main</h6>
+                    <a href="javascript:void(0)" class="sidebar-menu-list-item">
+                        <img src="./images/dashboard.svg" alt="dashboard" class="img-fluid me-2 menu-icon img1">
+                        <img src="./images/dashboard_1.svg" alt="dashboard" class="img-fluid me-2 menu-icon img2">
+                        Dashboard
+                    </a>
+                    <a class="sidebar-menu-list-item collapsable collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <img src="./images/campaign.svg" alt="campaign" class="img-fluid me-2 menu-icon img1">
+                        <img src="./images/campaign_1.svg" alt="campaign" class="img-fluid me-2 menu-icon img2">
+                        Campaign
+                    </a>
+                    <div class="collapse" id="collapseOne">
+                        <ul class="sidebar-menu-list-sub">
+                            <li>
+                                <a href="javascript:void(0)" class="active">Overview</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">SubId</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Hourly</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Timeframe</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Campaign (FB)</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a class="sidebar-menu-list-item collapsable collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <img src="./images/report.svg" alt="report" class="img-fluid me-2 menu-icon img1">
+                        <img src="./images/report_1.svg" alt="report" class="img-fluid me-2 menu-icon img2">
+                        Reports
+                    </a>
+                    <div class="collapse" id="collapseTwo">
+                        <ul class="sidebar-menu-list-sub">
+                            <li>
+                                <a href="javascript:void(0)" class="active">Overview</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">SubId</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Hourly</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Timeframe</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Campaign (FB)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="javascript:void(0)" class="sidebar-menu-list-item">
+                        <img src="./images/facebook_cebo.svg" alt="facebook cebo" class="img-fluid me-2 menu-icon img1">
+                        <img src="./images/facebook_cebo_1.svg" alt="facebook cebo"
+                            class="img-fluid me-2 menu-icon img2">
+                        Facebook CEBO
+                    </a>
+                </div>
+                <div class="sidebar-menu-list py-3 mb-3 bdr-bottom">
+                    <h6 class="secondary-text font-9">Help</h6>
+                    <a href="javascript:void(0)" class="sidebar-menu-list-item">
+                        <img src="./images/settings.svg" alt="settings" class="img-fluid me-2 menu-icon img1">
+                        <img src="./images/settings_1.svg" alt="settings" class="img-fluid me-2 menu-icon img2">
+                        Settings
+                    </a>
+                </div>
+                <div class="sidebar-menu-list dark-bg rounded py-3 px-2 mb-3">
+                    <h6 class="secondary-text font-9 text-uppercase d-flex justify-content-between align-items-center">
+                        switch account <a href="javascript:void(0)" class=""><img src="./images/switch_account.svg"
+                                alt="switch account" class="img-fluid"></a></h6>
+                    <div class="sidebar-menu-list-users">
+                        <div class="users d-flex align-items-center py-2">
+                            <img src="./images/profile_logo.svg" alt="profile" class="img-fluid me-2 menu-icon img1">
+                            <img src="./images/profile_logo_1.svg" alt="profile" class="img-fluid me-2 menu-icon img2">
+                            <div class="form-check d-flex align-items-center justify-content-between ps-0 w-100">
+                                <label class="form-check-label w100 text-ellipses" for="flexRadioDefault1"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Kunal Kothari">
+                                    Kunal Kothari
+                                </label>
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1" checked>
+
+                            </div>
+                        </div>
+                        <div class="users d-flex align-items-center py-2">
+                            <img src="./images/profile_logo.svg" alt="profile" class="img-fluid me-2 menu-icon img1">
+                            <img src="./images/profile_logo_1.svg" alt="profile" class="img-fluid me-2 menu-icon img2">
+                            <div class="form-check d-flex align-items-center justify-content-between ps-0 w-100">
+                                <label class="form-check-label w-100 text-ellipses" for="flexRadioDefault2"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Monica Davis">
+                                    Monica Davis
+                                </label>
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2">
+
+                            </div>
+                        </div>
+                        <div class="users d-flex align-items-center py-2">
+                            <img src="./images/profile_logo.svg" alt="profile" class="img-fluid me-2 menu-icon img1">
+                            <img src="./images/profile_logo_1.svg" alt="profile" class="img-fluid me-2 menu-icon img2">
+                            <div class="form-check d-flex align-items-center justify-content-between ps-0 w-100">
+                                <label class="form-check-label w-100 text-ellipses" for="flexRadioDefault3"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Ross Geller">
+                                    Ross Geller
+                                </label>
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault3">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-menu-list mb-2">
+                    <a href="javascript:void(0)" class="sidebar-menu-list-item">
+                        <img src="./images/add_new_account.svg" alt="add new account"
+                            class="img-fluid me-2 menu-icon img1">
+                        <img src="./images/add_new_account_1.svg" alt="add new account"
+                            class="img-fluid me-2 menu-icon img2">
+                        Add New Account
+                    </a>
+                </div>
+                <div class="sidebar-menu-list mb-2">
+                    <a href="javascript:void(0)" class="sidebar-menu-list-item">
+                        <img src="./images/log_out.svg" alt="logout account" class="img-fluid me-2 menu-icon img1">
+                        <img src="./images/log_out_1.svg" alt="logout account" class="img-fluid me-2 menu-icon img2">
+                        Logout Account
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="insights mb-4">
+                            <div class="insights-heading d-flex justify-content-between align-items-center flex-wrap">
+                                <h1 class="mb-3">Overview Reports</h1>
+                                <div class="d-flex align-items-center flex-wrap">
+                                    <!-- <div class="custom-select cst-date me-2 mb-4" id="customSelect1">
+                                        <div class="custom-select-trigger">
+                                            <span class="selectedTxt">Select an option</span>
+                                            <i class="fas fa-chevron-down me-2 font-10"></i>
+                                        </div>
+                                        <div class="custom-options">
+                                            <div class="custom-option active" data-value="today">
+                                                <img src="./images/checkmark.svg" alt="checkmark" class="img-fluid"> 
+                                                <span class="ps-1">Today</span>
+                                            </div>
+                                            <div class="custom-option" data-value="yesterday">
+                                                <img src="./images/checkmark.svg" alt="checkmark" class="img-fluid">
+                                                <span class="ps-1">Yesterday</span>
+                                            </div>
+                                            <div class="custom-option" data-value="last 7 days">
+                                                <img src="./images/checkmark.svg" alt="checkmark" class="img-fluid">
+                                                <span class="ps-1">Last 7 days</span>
+                                            </div>
+                                            <div class="custom-option" data-value="last month">
+                                                <img src="./images/checkmark.svg" alt="checkmark" class="img-fluid">
+                                                <span class="ps-1">Last month</span>
+                                            </div>
+                                            <div class="custom-option" data-value="custom date">
+                                                <img src="./images/plus.svg" alt="plus" class="img-fluid visible"> 
+                                                <span class="ps-2">Custom date</span>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                    <div class="custom-select cst-select me-2 mb-4" id="selectSocial">
+                                        <span class="font-10 label">Social Media Platform</span>
+                                        <div class="custom-select-trigger cst-select-wrap">
+                                            <span id="selectedTxt"
+                                                class="d-flex align-items-center selectedTxt w-100">Select an
+                                                option</span>
+                                        </div>
+                                        <div class="custom-options">
+                                            <div class="custom-option" data-value="all">
+                                                <span>All</span>
+                                            </div>
+                                            <div class="custom-option" data-value="facebook">
+                                                <img src="./images/facebook.svg" alt="Option 2" class="optimg">
+                                                <span class="ps-1">Facebook</span>
+                                            </div>
+                                            <div class="custom-option" data-value="google">
+                                                <img src="./images/google.svg" alt="Option 3" class="optimg">
+                                                <span class="ps-1">Google</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <a href="javascript:void(0)" class="me-2 rounded-circle mb-4"
+                                        id="filterCampign"><img src="./images/filter.svg" alt="filter"
+                                            class="img-fluid"></a>
+                                    <a href="javascript:void(0)" class="me-2 mb-4"><img src="./images/refresh.svg"
+                                            alt="refresh" class="img-fluid"></a>
+                                </div>
+                            </div>
+                            <div class="insights-filter bg-grey">
+                                <div class="row align-items-end">
+                                    <div class="col-md-10">
+                                        <div class="row">
+                                            <div class="col-md-4 mb-3">
+                                                <div class="datepicker" id="customSelect1">
+                                                    <span class="d-block text-nowrap mb-2">Date</span>
+                                                    <div class="datepicker-wrap" id="reportrange">
+                                                        <span></span>
+                                                        <i class="fas fa-chevron-down me-2 font-10"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="insights-filter-select">
+                                                    <span class="d-block text-nowrap mb-2">Campaign(System 1)</span>
+                                                    <input type="text" list="campaigns" name="campaign" id="campaign"
+                                                        placeholder="--select--">
+                                                    <i class="fas fa-caret-down dropdown-icon"></i>
+                                                    <datalist id="campaigns">
+                                                        <option value="Edge">
+                                                        <option value="Firefox">
+                                                        <option value="Chrome">
+                                                        <option value="Opera">
+                                                        <option value="Safari">
+                                                    </datalist>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="insights-filter-select">
+                                                    <span class="d-block text-nowrap mb-2">Sub ID</span>
+                                                    <input type="text" list="subs" name="sub" id="sub"
+                                                        placeholder="--select--">
+                                                    <i class="fas fa-caret-down dropdown-icon"></i>
+                                                    <datalist id="subs">
+                                                        <option value="Edge">
+                                                        <option value="Firefox">
+                                                        <option value="Chrome">
+                                                        <option value="Opera">
+                                                        <option value="Safari">
+                                                    </datalist>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="insights-filter-select">
+                                                    <span class="d-block text-nowrap mb-2">Adaccount (Facebook)</span>
+                                                    <input type="text" list="adaccounts" name="addaccount"
+                                                        id="addaccount" placeholder="--select--">
+                                                    <i class="fas fa-caret-down dropdown-icon"></i>
+                                                    <datalist id="adaccounts">
+                                                        <option value="Edge">
+                                                        <option value="Firefox">
+                                                        <option value="Chrome">
+                                                        <option value="Opera">
+                                                        <option value="Safari">
+                                                    </datalist>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="insights-filter-select">
+                                                    <span class="d-block text-nowrap mb-2">Campaign (Facebook)</span>
+                                                    <input type="text" list="campaignsfacebook" name="campaignfacebook"
+                                                        id="campaignfacebook" placeholder="--select--">
+                                                    <i class="fas fa-caret-down dropdown-icon"></i>
+                                                    <datalist id="campaignsfacebook">
+                                                        <option value="Edge">
+                                                        <option value="Firefox">
+                                                        <option value="Chrome">
+                                                        <option value="Opera">
+                                                        <option value="Safari">
+                                                    </datalist>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-md-2 mb-3 d-flex justify-content-end align-items-center">
+                                        <a href="javascript:void(0)" class="btn primarybtn">Submit</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-7 mb-4">
+                                    <div class="card">
+                                        <div class="card-body p-2">
+                                            <div class="row g-0">
+                                                <div class="col-md-6 col-xl-4 mb-3 pe-2">
+                                                    <div class="insights-detail w-100 h-100">
+                                                        <div
+                                                            class="insights-detail-head d-flex align-items-center justify-content-between mb-3">
+                                                            <p class="mb-0">Total Spend</p>
+                                                            <img src="./images/spend.svg" alt="spend" class="img-fluid">
+                                                        </div>
+                                                        <div
+                                                            class="insights-detail-points d-flex align-items-center justify-content-between">
+                                                            <h2 class="font-600 mb-0">$120,000</h2>
+                                                            <span class="increment bg-box"><img
+                                                                    src="./images/greenup.svg" alt="arrow up"
+                                                                    class="img-fluid me-1">
+                                                                8.0%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-xl-4 mb-3 pe-2">
+                                                    <div class="insights-detail w-100 h-100">
+                                                        <div
+                                                            class="insights-detail-head d-flex align-items-center justify-content-between mb-3">
+                                                            <p class="mb-0">Revenues($)</p>
+                                                            <img src="./images/revenue.svg" alt="Revenues($)"
+                                                                class="img-fluid">
+                                                        </div>
+                                                        <div
+                                                            class="insights-detail-points d-flex align-items-center justify-content-between">
+                                                            <h2 class="font-600 mb-0">$10,00,000</h2>
+                                                            <span class="increment bg-box"><img
+                                                                    src="./images/greenup.svg" alt="arrow up"
+                                                                    class="img-fluid me-1">
+                                                                8.0%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-xl-4 mb-3">
+                                                    <div class="insights-detail w-100 h-100">
+                                                        <div
+                                                            class="insights-detail-head d-flex align-items-center justify-content-between mb-3">
+                                                            <p class="mb-0">RPC($)</p>
+                                                            <img src="./images/rpc.svg" alt="RPC($)" class="img-fluid">
+                                                        </div>
+                                                        <div
+                                                            class="insights-detail-points d-flex align-items-center justify-content-between">
+                                                            <h2 class="font-600 mb-0">0.09</h2>
+                                                            <span class="increment bg-box"><img
+                                                                    src="./images/greenup.svg" alt="arrow up"
+                                                                    class="img-fluid me-1">
+                                                                8.0%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-xl-4 mb-3 pe-2">
+                                                    <div class="insights-detail w-100 h-100">
+                                                        <div
+                                                            class="insights-detail-head d-flex align-items-center justify-content-between mb-3">
+                                                            <p class="mb-0">Clicks</p>
+                                                            <img src="./images/clicks.svg" alt="Clicks"
+                                                                class="img-fluid">
+                                                        </div>
+                                                        <div
+                                                            class="insights-detail-points d-flex align-items-center justify-content-between">
+                                                            <h2 class="font-600 mb-0">3,425</h2>
+                                                            <span class="increment bg-box"><img
+                                                                    src="./images/greenup.svg" alt="arrow up"
+                                                                    class="img-fluid me-1">
+                                                                8.0%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-xl-4 mb-3 pe-2">
+                                                    <div class="insights-detail w-100 h-100">
+                                                        <div
+                                                            class="insights-detail-head d-flex align-items-center justify-content-between mb-3">
+                                                            <p class="mb-0">Searches</p>
+                                                            <img src="./images/searches.svg" alt="Searches"
+                                                                class="img-fluid">
+                                                        </div>
+                                                        <div
+                                                            class="insights-detail-points d-flex align-items-center justify-content-between">
+                                                            <h2 class="font-600 mb-0">6,823</h2>
+                                                            <span class="increment bg-box"><img
+                                                                    src="./images/greenup.svg" alt="arrow up"
+                                                                    class="img-fluid me-1">
+                                                                8.0%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-xl-4 mb-3">
+                                                    <div class="insights-detail w-100 h-100">
+                                                        <div
+                                                            class="insights-detail-head d-flex align-items-center justify-content-between mb-3">
+                                                            <p class="mb-0">Lorem</p>
+                                                            <img src="./images/searches.svg" alt="Searches"
+                                                                class="img-fluid">
+                                                        </div>
+                                                        <div
+                                                            class="insights-detail-points d-flex align-items-center justify-content-between">
+                                                            <h2 class="font-600 mb-0">6,823</h2>
+                                                            <span class="increment bg-box"><img
+                                                                    src="./images/greenup.svg" alt="arrow up"
+                                                                    class="img-fluid me-1">
+                                                                8.0%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 mb-5 mb-md-0 pb-4 pb-md-0">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <figure class="highcharts-figure">
+                                                <div id="rpc" class="rpcgraph" style=""></div>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="campaign position-relative mb-4">
+                            <div class="campaign-header table-head">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <div class="card radius-bottom0">
+                                            <div class="card-body py-4">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h4 class="font-600 mb-0">List of Campaign</h4>
+                                                    <div class="d-flex align-items-center">
+                                                        <!-- <a href="javascript:void(0)"><img src="./images/search.svg"
+                                                                alt="search" class="img-fluid pe-3"></a>
+                                                        <div class="dropdown">
+                                                            <button class="bg-transparent" type="button"
+                                                                id="campaignDropdown" data-bs-toggle="dropdown"
+                                                                aria-expanded="false">
+                                                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                            </button>
+                                                            <ul class="dropdown-menu"
+                                                                aria-labelledby="campaignDropdown">
+                                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                                <li><a class="dropdown-item" href="#">Another action</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#">Something else
+                                                                        here</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card radius-top0 shadow-none">
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table stripe table-hover text-nowrap" width="100%" id="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Campaign Domain</th>
+                                                    <th>Total Sessions</th>
+                                                    <th>Mobile Sessions</th>
+                                                    <th>Desktop Sessions</th>
+                                                    <th>Desktop Sessions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="border-0">
+                                                <tr>
+                                                    <td>adhd-treatment-in-mexico.zone</td>
+                                                    <td>100435</td>
+                                                    <td>100400</td>
+                                                    <td>35</td>
+                                                    <td>35</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Text</td>
+                                                    <td>Text</td>
+                                                    <td>Text</td>
+                                                    <td>Text</td>
+                                                    <td>Text</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Text</td>
+                                                    <td>Text</td>
+                                                    <td>Text</td>
+                                                    <td>Text</td>
+                                                    <td>Text</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Text</td>
+                                                    <td>Text</td>
+                                                    <td>Text</td>
+                                                    <td>Text</td>
+                                                    <td>Text</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Text</td>
+                                                    <td>Text</td>
+                                                    <td>Text</td>
+                                                    <td>Text</td>
+                                                    <td>Text</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Text</td>
+                                                    <td>Text</td>
+                                                    <td>Text</td>
+                                                    <td>Text</td>
+                                                    <td>Text</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Text</td>
+                                                    <td>Text</td>
+                                                    <td>Text</td>
+                                                    <td>Text</td>
+                                                    <td>Text</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Text</td>
+                                                    <td>Text</td>
+                                                    <td>Text</td>
+                                                    <td>Text</td>
+                                                    <td>Text</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Text</td>
+                                                    <td>Text</td>
+                                                    <td>Text</td>
+                                                    <td>Text</td>
+                                                    <td>Text</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Text</td>
+                                                    <td>Text</td>
+                                                    <td>Text</td>
+                                                    <td>Text</td>
+                                                    <td>Text</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <script type="text/javascript" src="./js/jquery-3.7.1.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src="./js/dataTables.js"></script>
+    <script type="text/javascript" src="./js/dataTables.bootstrap5.js"></script>
+    <script type="text/javascript" src="./js/highcharts.js"></script>
+    <script type="text/javascript" src="./js/moment.min.js"></script>
+    <script type="text/javascript" src="./js/daterangepicker.min.js"></script>
+    <script type="text/javascript" src="./js/custom.js"></script>
+
+
+    <script>
+        filterCampign = document.getElementById("filterCampign");
+        insightsFilter = document.querySelector(".insights-filter");
+        // console.log(insightsFilter);
+        filterCampign.addEventListener("click", function () {
+            filterCampign.classList.toggle("bg-white")
+            insightsFilter.classList.toggle("show")
+        })
+    </script>
+
+    <script>
+
+        $("#table").dataTable({
+            scrollX: true,
+            language: {
+                'paginate': {
+                    'previous': '<i class="fa-solid fa-angle-left me-2 font-12"></i>Back',
+                    'next': 'Next<i class="fa-solid fa-angle-right ms-2 font-12"></i>',
+                    'first': '<i class="fa-solid fa-angles-left me-2 font-12"></i>First',
+                    'last': 'Last<i class="fa-solid fa-angles-right ms-2 font-12"></i>'
+                }
+            },
+            "aoColumnDefs": [
+                { "bSortable": false, "aTargets": [1, 2, 3, 4] },
+            ],
+            // "pageLength": 5,
+            // "sDom": 'Rfrtlip',
+        });
+    </script>
+
+
+    <script>
+        Highcharts.chart('rpc', {
+            chart: {
+                zoomType: 'xy',
+            },
+            title: {
+                text: 'Clicks, RPC and Revenue',
+                align: 'left',
+                margin: 40,
+                style: {
+                    fontWeight: 'bold',
+                    fontSize: '18px'
+                }
+            },
+            credits: {
+                enabled: false
+            },
+            subtitle: {
+                text: 'Past 2 weeks',
+                align: 'left',
+                style: {
+                    fontSize: '12px',
+                    color: '#757575'
+                }
+            },
+            xAxis: [{
+                categories: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+                crosshair: true,
+
+            }],
+            yAxis: [{ // Primary yAxis (left)
+                labels: {
+                    format: '{value}',
+                    style: {
+                        color: "#757575"
+                    }
+                },
+                title: {
+                    text: null,
+                }
+            }, { // Secondary yAxis (right)
+                title: {
+                    text: null,
+                },
+                labels: {
+                    format: '{value} K',
+                    style: {
+                        color: "#FFB41B"
+                    }
+                },
+                opposite: true
+            }],
+            tooltip: {
+                shared: true
+            },
+            legend: {
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+                itemStyle: {
+                    fontWeight: 'normal'
+                }
+            },
+            series: [{
+                name: 'Clicks',
+                type: 'column',
+                yAxis: 0,
+                data: [400, 300, 700, 500, 600, 450, 700],
+                tooltip: {
+                    valueSuffix: ''
+                },
+                color: '#377CFE'
+            }, {
+                name: 'RPC',
+                type: 'column',
+                yAxis: 0,
+                data: [200, 150, 300, 250, 320, 240, 380],
+                tooltip: {
+                    valueSuffix: ''
+                },
+                color: '#39CB7B'
+            }, {
+                name: 'Revenue',
+                type: 'line',
+                yAxis: 1,
+                data: [1000, 900, 1500, 1100, 1600, 1300, 2000],
+                tooltip: {
+                    valueSuffix: ' K'
+                },
+                color: '#FFB41B',
+                marker: {
+                    enabled: true,
+                    symbol: 'circle',
+                    radius: 4
+                }
+            }]
+        });
+    </script>
+
+
+    <script>
+        $(function () {
+
+            var start = moment().subtract(29, 'days');
+            var end = moment();
+
+            function cb(start, end) {
+                $('#reportrange span').html(start.format('YYYY/MM/D') + ' - ' + end.format('YYYY/MM/D'));
+            }
+
+            $('#reportrange').daterangepicker({
+                startDate: start,
+                endDate: end,
+                ranges: {
+                    'Today': [moment(), moment()],
+                    'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                    'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                    'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                    'This Month': [moment().startOf('month'), moment().endOf('month')],
+                    'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                }
+            }, cb);
+
+            cb(start, end);
+
+        });
+    </script>
+</body>
+
+</html>
